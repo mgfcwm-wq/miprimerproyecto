@@ -2,10 +2,10 @@ import json
 
 with open('C:/Proyectos/MiPrimerProyecto/data/data.json', 'r') as file:
   datos = json.load(file)
-print (datos)
 
 # 1. Gasto total por usuario: Muestra el nombre de cada usuario y el dinero total que ha gastado. 
 # Si un usuario no tiene compras (como david_perez), debe mostrar 0.00 €.
+print("1. Gasto total por usuario:")
 for usuario, compras in datos.items():
     # Sumamos el precio de cada producto de la lista del usuario.
     # Si la lista está vacía (como david_perez), sum() devuelve 0 automáticamente.
@@ -13,6 +13,7 @@ for usuario, compras in datos.items():
     print(f"- {usuario}: {gasto_total:.2f} €")
 
 # 2. Cliente VIP (Mayor gasto): Indica qué usuario ha gastado más dinero en total y cuál ha sido esa cantidad.
+print("\n2. Cliente VIP (Mayor gasto):")
 max_gasto = 0
 vip_usuario = ""
 for usuario, compras in datos.items():
@@ -24,7 +25,7 @@ for usuario, compras in datos.items():
 print(f"\nCliente VIP: {vip_usuario} con un gasto total de {max_gasto:.2f} €")
 
 # 3. Cliente con más artículos: Indica qué usuario ha comprado mayor cantidad de productos (sin importar el precio) y cuántos fueron.
-
+print("\n3. Cliente con más artículos:")
 max_articulos = 0
 articulos_usuario = ""
 for usuario, compras in datos.items():
@@ -61,7 +62,7 @@ for usuario, compras in datos.items():
 
     print(f"- {usuario}: {gasto_total:.2f} €")
 
-print("\n4. Producto más caro y más barato:")
+print("Producto más caro y más barato:")
 
 if mas_caro and mas_barato:
     print(f"- Más caro: {mas_caro['producto']} ({mas_caro['precio']:.2f} €) - Comprado por: {mas_caro['usuario']}")
