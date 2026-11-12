@@ -1,5 +1,13 @@
+##########################################
+# AUTOR: MARTIN GOMEZ FERNANDEZ
+# FECHA: 2024-06-19
+# DESCRIPCION: Ejercicio de contabilidad de compras de usuarios.
+##########################################
+
 import json
 
+# NOTA: He utilizado path completo de la ruta para abrir el archivo. 
+# Si lo ejecutas en otro equipo, asegúrate de cambiarlo a la ruta correcta donde tengas el archivo data.json.
 with open('C:/Proyectos/MiPrimerProyecto/data/data.json', 'r') as file:
   datos = json.load(file)
 
