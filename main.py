@@ -1,6 +1,6 @@
 ##########################################
 # AUTOR: MARTIN GOMEZ FERNANDEZ
-# FECHA: 2024-06-19
+# FECHA: 12/11/2026
 # DESCRIPCION: Ejercicio de contabilidad de compras de usuarios.
 ##########################################
 
