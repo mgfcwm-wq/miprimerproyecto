@@ -88,6 +88,7 @@ for categoria, gasto in resumen_categorias.items():
 
 # 6. Productos con IVA : esos precios son sin IVA -que gran error-, incluye un nuevo atributo 'precioIVA' siendo el valor el calculo de $precio*1.21$
 # 7. Crea un fichero CSV, llamado contabilidad_a.csv donde cada muestra sea: producto y precioIVA.
+print("\n6. Productos IVA:")
 lista_contabilidad = []
 
 for usuario, compras in datos.items():
